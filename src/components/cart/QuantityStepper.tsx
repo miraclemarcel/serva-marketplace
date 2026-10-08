@@ -1,7 +1,7 @@
 "use client";
 
 import { Minus, Plus } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 type Props = {
   value: number;
@@ -14,14 +14,14 @@ type Props = {
 };
 
 export function QuantityStepper({ value, min, max, step, onChange, label, size = "md" }: Props) {
-  const [draft, setDraft] = useState(String(value));
-  useEffect(() => setDraft(String(value)), [value]);
+  // Free-typed text while editing; null means "show the committed value".
+  const [draft, setDraft] = useState<string | null>(null);
 
   const commit = () => {
-    const n = Number.parseInt(draft, 10);
-    if (!Number.isFinite(n)) return setDraft(String(value));
+    const n = Number.parseInt(draft ?? "", 10);
+    setDraft(null);
+    if (!Number.isFinite(n)) return;
     const snapped = Math.min(max, Math.max(min, min + Math.round((n - min) / step) * step));
-    setDraft(String(snapped));
     if (snapped !== value) onChange(snapped);
   };
 
@@ -40,7 +40,7 @@ export function QuantityStepper({ value, min, max, step, onChange, label, size =
       <input
         inputMode="numeric"
         aria-label={label}
-        value={draft}
+        value={draft ?? String(value)}
         onChange={(e) => setDraft(e.target.value.replace(/\D/g, ""))}
         onBlur={commit}
         onKeyDown={(e) => e.key === "Enter" && (e.preventDefault(), commit())}
