@@ -20,7 +20,7 @@ export function turnaroundLabel(s: Service) {
   return min === max ? `${min} day${min > 1 ? "s" : ""}` : `${min}–${max} days`;
 }
 
-export function ServiceCard({ service, market, priority = false }: { service: Service; market: Market; priority?: boolean }) {
+export function ServiceCard({ service, market }: { service: Service; market: Market }) {
   const cat = CATEGORY_MAP[service.category];
   const from = convert(startingPrice(service), market);
   const list = convert(service.basePrice, market);
@@ -45,7 +45,6 @@ export function ServiceCard({ service, market, priority = false }: { service: Se
             </span>
           )}
         </div>
-        {priority && <span className="sr-only">Featured</span>}
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex items-center justify-between gap-2">
