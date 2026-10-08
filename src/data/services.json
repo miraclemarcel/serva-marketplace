@@ -1,0 +1,1633 @@
+[
+  {
+    "id": "svc_001",
+    "slug": "logo-design",
+    "name": "Logo Design",
+    "category": "digital",
+    "tagline": "A distinctive mark crafted by senior brand designers.",
+    "description": "Your logo is the handshake of your brand. Our senior designers dig into your audience, competitors and personality, then craft original concepts you can refine with us until it feels unmistakably yours. You receive a complete, production-ready logo suite that works on a business card, a billboard and a phone screen.",
+    "basePrice": 149,
+    "unit": "project",
+    "discount": { "percent": 15, "label": "Launch offer" },
+    "badge": "Bestseller",
+    "popularity": 98,
+    "rating": 4.9,
+    "reviews": 2310,
+    "createdAt": "2025-01-12",
+    "useCases": ["launch", "marketing", "social"],
+    "industries": ["tech", "hospitality", "retail", "finance", "education", "health", "creative", "nonprofit"],
+    "urgency": "standard",
+    "turnaround": { "min": 3, "max": 5, "express": 2 },
+    "includes": [
+      "Creative brief call with your designer",
+      "Original concepts drawn from scratch",
+      "3 rounds of revisions",
+      "Vector files (AI, SVG, EPS, PDF) and PNGs",
+      "Colour, mono and reversed versions",
+      "Full copyright transfer"
+    ],
+    "options": [
+      {
+        "id": "package",
+        "label": "Package",
+        "choices": [
+          { "id": "starter", "label": "Starter", "delta": 0, "hint": "2 concepts" },
+          { "id": "pro", "label": "Pro", "delta": 100, "hint": "4 concepts + colour palette" },
+          { "id": "signature", "label": "Signature", "delta": 250, "hint": "6 concepts + mini guidelines" }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 5, "step": 1 },
+    "tags": ["logo", "mark", "emblem", "wordmark", "monogram", "icon", "brand", "branding"],
+    "art": { "kind": "logo", "palette": ["#6D3BFF", "#B18CFF", "#FFC93C", "#16123A"] },
+    "pairsWith": ["business-cards", "branded-t-shirts", "social-media-kit", "custom-stickers", "letterhead-stationery"]
+  },
+  {
+    "id": "svc_002",
+    "slug": "brand-identity-kit",
+    "name": "Brand Identity Kit",
+    "category": "digital",
+    "tagline": "Logo, colours, type and guidelines — one cohesive system.",
+    "description": "Go beyond a logo with a complete identity system. We define your colour palette, typography, graphic elements and tone, then package everything in a clear brand guidelines document your team and partners can follow. Ideal for new ventures and rebrands that want to look established from day one.",
+    "basePrice": 599,
+    "unit": "project",
+    "badge": "Staff pick",
+    "popularity": 88,
+    "rating": 4.9,
+    "reviews": 870,
+    "createdAt": "2025-02-03",
+    "useCases": ["launch", "marketing"],
+    "industries": ["tech", "retail", "finance", "health", "creative", "hospitality"],
+    "urgency": "flexible",
+    "turnaround": { "min": 7, "max": 12 },
+    "includes": [
+      "Primary logo, secondary marks and favicon",
+      "Colour palette with print and screen values",
+      "Typography system and pairing rules",
+      "Brand guidelines PDF (20+ pages)",
+      "Social media profile kit",
+      "Stationery layouts (card, letterhead, email signature)"
+    ],
+    "options": [
+      {
+        "id": "scope",
+        "label": "Scope",
+        "choices": [
+          { "id": "essentials", "label": "Essentials", "delta": 0, "hint": "Core identity + guidelines" },
+          { "id": "complete", "label": "Complete", "delta": 400, "hint": "+ iconography & patterns" },
+          { "id": "enterprise", "label": "Enterprise", "delta": 1100, "hint": "+ sub-brands & motion rules" }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 3, "step": 1 },
+    "tags": ["identity", "brand guidelines", "style guide", "rebrand", "colour palette", "typography", "branding"],
+    "art": { "kind": "identity", "palette": ["#3B1FB8", "#6D3BFF", "#FF6A4D", "#FFFFFF"] },
+    "pairsWith": ["business-cards", "packaging-design", "product-photography", "branded-tote-bags", "brand-naming"]
+  },
+  {
+    "id": "svc_003",
+    "slug": "social-media-kit",
+    "name": "Social Media Kit",
+    "category": "digital",
+    "tagline": "Scroll-stopping templates you can edit in minutes.",
+    "description": "A ready-to-post library of on-brand templates for feed posts, stories, covers and carousels. Every template is built in Canva and Figma so your team can drop in new content without breaking the look. Perfect for keeping a consistent feed while posting every day.",
+    "basePrice": 119,
+    "unit": "kit",
+    "discount": { "percent": 20, "label": "Bundle deal" },
+    "badge": "Trending",
+    "popularity": 90,
+    "rating": 4.8,
+    "reviews": 1404,
+    "createdAt": "2025-04-18",
+    "useCases": ["social", "marketing", "launch"],
+    "industries": ["retail", "health", "hospitality", "creative", "education", "nonprofit"],
+    "urgency": "standard",
+    "turnaround": { "min": 2, "max": 4, "express": 1 },
+    "includes": [
+      "Profile picture and cover designs",
+      "Editable feed, story and carousel templates",
+      "Canva + Figma source files",
+      "Highlight cover icon set",
+      "Quick-start posting guide"
+    ],
+    "options": [
+      {
+        "id": "platforms",
+        "label": "Platforms",
+        "choices": [
+          { "id": "instagram", "label": "Instagram", "delta": 0 },
+          { "id": "ig-linkedin", "label": "Instagram + LinkedIn", "delta": 40 },
+          { "id": "all", "label": "All platforms", "delta": 80, "hint": "IG, TikTok, LinkedIn, X, YouTube" }
+        ]
+      },
+      {
+        "id": "templates",
+        "label": "Templates",
+        "choices": [
+          { "id": "10", "label": "10 templates", "delta": 0 },
+          { "id": "25", "label": "25 templates", "delta": 60 },
+          { "id": "50", "label": "50 templates", "delta": 140 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 5, "step": 1 },
+    "tags": ["social media", "instagram", "tiktok", "linkedin", "templates", "posts", "stories", "canva"],
+    "art": { "kind": "social", "palette": ["#B18CFF", "#FF5FA2", "#FFC93C", "#16123A"] },
+    "pairsWith": ["product-photography", "social-video-content", "logo-design", "motion-logo"]
+  },
+  {
+    "id": "svc_004",
+    "slug": "landing-page-design",
+    "name": "Website & Landing Page Design",
+    "category": "digital",
+    "tagline": "High-converting pages, designed and built for launch.",
+    "description": "A conversion-focused website designed around your offer. We plan the page structure, write wireframes with you, and deliver a polished responsive design — optionally built in Webflow so you can edit it yourself. Every page is optimised for speed, SEO and accessibility.",
+    "basePrice": 899,
+    "unit": "project",
+    "popularity": 76,
+    "rating": 4.8,
+    "reviews": 410,
+    "createdAt": "2025-03-21",
+    "useCases": ["launch", "marketing"],
+    "industries": ["tech", "finance", "health", "education", "retail"],
+    "urgency": "flexible",
+    "turnaround": { "min": 10, "max": 14 },
+    "includes": [
+      "Discovery workshop and sitemap",
+      "Wireframes and high-fidelity design",
+      "Desktop, tablet and mobile layouts",
+      "SEO-ready structure and meta copy",
+      "2 rounds of revisions",
+      "Handover call and Figma file"
+    ],
+    "options": [
+      {
+        "id": "pages",
+        "label": "Pages",
+        "choices": [
+          { "id": "1", "label": "Single landing page", "delta": 0 },
+          { "id": "3", "label": "Up to 3 pages", "delta": 700 },
+          { "id": "5", "label": "Up to 5 pages", "delta": 1300 }
+        ]
+      },
+      {
+        "id": "build",
+        "label": "Delivery",
+        "choices": [
+          { "id": "design", "label": "Design only", "delta": 0 },
+          { "id": "webflow", "label": "Design + Webflow build", "delta": 600 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 2, "step": 1 },
+    "tags": ["website", "web design", "landing page", "webflow", "site", "homepage", "ux", "ui"],
+    "art": { "kind": "web", "palette": ["#16123A", "#3B1FB8", "#2BD9A0", "#FFFFFF"] },
+    "pairsWith": ["brand-video", "product-photography", "copywriting", "illustration"]
+  },
+  {
+    "id": "svc_005",
+    "slug": "motion-logo",
+    "name": "Animated Logo Intro",
+    "category": "digital",
+    "tagline": "Bring your mark to life for reels, ads and events.",
+    "description": "A short, polished logo animation for video intros, social content, presentations and event screens. Our motion designers choreograph your mark with sound design that matches your brand's energy — playful, premium or bold.",
+    "basePrice": 189,
+    "unit": "animation",
+    "badge": "New",
+    "popularity": 65,
+    "rating": 4.7,
+    "reviews": 188,
+    "createdAt": "2026-07-02",
+    "useCases": ["social", "marketing", "events"],
+    "industries": ["creative", "tech", "hospitality", "retail"],
+    "urgency": "standard",
+    "turnaround": { "min": 4, "max": 6, "express": 3 },
+    "includes": [
+      "Storyboard and style frame",
+      "Custom sound design",
+      "1080p and 4K MP4 exports",
+      "Square, vertical and landscape cuts",
+      "2 rounds of revisions"
+    ],
+    "options": [
+      {
+        "id": "length",
+        "label": "Length",
+        "choices": [
+          { "id": "3s", "label": "3 seconds", "delta": 0 },
+          { "id": "6s", "label": "6 seconds", "delta": 60 },
+          { "id": "10s", "label": "10 seconds", "delta": 120 }
+        ]
+      },
+      {
+        "id": "format",
+        "label": "Formats",
+        "choices": [
+          { "id": "mp4", "label": "MP4", "delta": 0 },
+          { "id": "lottie", "label": "MP4 + Lottie for web", "delta": 50 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 5, "step": 1 },
+    "tags": ["animation", "motion", "logo animation", "intro", "video", "lottie", "reveal"],
+    "art": { "kind": "motion", "palette": ["#6D3BFF", "#00B8C2", "#FFC93C", "#FFFFFF"] },
+    "pairsWith": ["brand-video", "event-backdrop", "social-video-content", "logo-design"]
+  },
+  {
+    "id": "svc_006",
+    "slug": "pitch-deck-design",
+    "name": "Pitch Deck Design",
+    "category": "digital",
+    "tagline": "Investor-ready slides that tell your story with clarity.",
+    "description": "We turn your narrative into a crisp, visual deck that investors and clients actually remember. Expect clean data visualisation, custom icons and a master template your team can reuse for every future presentation.",
+    "basePrice": 349,
+    "unit": "deck",
+    "badge": "Trending",
+    "popularity": 80,
+    "rating": 4.9,
+    "reviews": 652,
+    "createdAt": "2025-06-14",
+    "useCases": ["launch", "marketing"],
+    "industries": ["tech", "finance", "health", "education"],
+    "urgency": "standard",
+    "turnaround": { "min": 4, "max": 6, "express": 2 },
+    "includes": [
+      "Story and structure review",
+      "Custom slide designs and charts",
+      "Reusable master template",
+      "Icon set matched to your brand",
+      "Editable source file"
+    ],
+    "options": [
+      {
+        "id": "slides",
+        "label": "Slides",
+        "choices": [
+          { "id": "10", "label": "Up to 10", "delta": 0 },
+          { "id": "20", "label": "Up to 20", "delta": 250 },
+          { "id": "30", "label": "Up to 30", "delta": 450 }
+        ]
+      },
+      {
+        "id": "software",
+        "label": "Software",
+        "choices": [
+          { "id": "slides", "label": "Google Slides", "delta": 0 },
+          { "id": "pptx", "label": "PowerPoint", "delta": 0 },
+          { "id": "keynote", "label": "Keynote", "delta": 0 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 3, "step": 1 },
+    "tags": ["pitch deck", "presentation", "slides", "powerpoint", "keynote", "investor", "fundraising"],
+    "art": { "kind": "deck", "palette": ["#FFC93C", "#FF6A4D", "#6D3BFF", "#16123A"] },
+    "pairsWith": ["copywriting", "team-headshots", "illustration", "brand-naming"]
+  },
+  {
+    "id": "svc_007",
+    "slug": "email-signature",
+    "name": "Email Signature Kit",
+    "category": "digital",
+    "tagline": "Every email, perfectly on brand — for the whole team.",
+    "description": "Responsive HTML email signatures that render cleanly in Gmail, Outlook and Apple Mail. We set up a master design plus a simple generator so every new hire gets a consistent signature in seconds.",
+    "basePrice": 59,
+    "unit": "kit",
+    "popularity": 52,
+    "rating": 4.7,
+    "reviews": 233,
+    "createdAt": "2025-09-09",
+    "useCases": ["onboarding", "launch"],
+    "industries": ["finance", "tech", "education", "nonprofit", "health"],
+    "urgency": "express",
+    "turnaround": { "min": 1, "max": 2 },
+    "includes": [
+      "Responsive HTML signature design",
+      "Tested in Gmail, Outlook and Apple Mail",
+      "Signature generator for your team",
+      "Social and booking-link icons"
+    ],
+    "options": [
+      {
+        "id": "seats",
+        "label": "Team size",
+        "choices": [
+          { "id": "10", "label": "Up to 10 people", "delta": 0 },
+          { "id": "50", "label": "Up to 50 people", "delta": 40 },
+          { "id": "unlimited", "label": "Unlimited", "delta": 90 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 3, "step": 1 },
+    "tags": ["email signature", "email", "outlook", "gmail", "html signature", "onboarding"],
+    "art": { "kind": "letterhead", "palette": ["#EDE6FF", "#B18CFF", "#6D3BFF", "#16123A"] },
+    "pairsWith": ["business-cards", "letterhead-stationery", "team-headshots"]
+  },
+  {
+    "id": "svc_008",
+    "slug": "branded-mugs",
+    "name": "Branded Mugs",
+    "category": "gifts",
+    "tagline": "The desk-side reminder of your brand, every single morning.",
+    "description": "Premium ceramic and enamel mugs printed with dishwasher-safe, fade-resistant inks. Choose a classic, oversized or colour-changing mug and we'll handle artwork setup and send a free digital proof before anything is printed.",
+    "basePrice": 9.5,
+    "unit": "mug",
+    "badge": "Bestseller",
+    "popularity": 95,
+    "rating": 4.8,
+    "reviews": 3120,
+    "createdAt": "2025-01-05",
+    "useCases": ["gifting", "events", "onboarding"],
+    "industries": ["tech", "hospitality", "retail", "finance", "education", "health", "creative", "nonprofit"],
+    "urgency": "standard",
+    "turnaround": { "min": 5, "max": 7, "express": 3 },
+    "includes": [
+      "Free artwork setup and digital proof",
+      "Dishwasher- and microwave-safe print",
+      "Individually boxed for safe delivery",
+      "Mix-and-match colours at no extra cost"
+    ],
+    "options": [
+      {
+        "id": "style",
+        "label": "Mug style",
+        "choices": [
+          { "id": "classic", "label": "Classic 11oz ceramic", "delta": 0 },
+          { "id": "large", "label": "Large 15oz ceramic", "delta": 2 },
+          { "id": "enamel", "label": "Enamel camp mug", "delta": 3.5 },
+          { "id": "magic", "label": "Colour-changing", "delta": 4.5 }
+        ]
+      },
+      {
+        "id": "print",
+        "label": "Print area",
+        "choices": [
+          { "id": "one", "label": "One side", "delta": 0 },
+          { "id": "wrap", "label": "Full wrap", "delta": 1.5 }
+        ]
+      }
+    ],
+    "quantity": { "min": 12, "max": 2000, "step": 6 },
+    "tiers": [
+      { "min": 50, "percent": 8 },
+      { "min": 100, "percent": 15 },
+      { "min": 250, "percent": 22 }
+    ],
+    "tags": ["mug", "mugs", "cup", "coffee", "merch", "swag", "souvenir", "ceramic", "gift"],
+    "art": { "kind": "mug", "palette": ["#FF6A4D", "#FFB199", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["logo-design", "custom-stickers", "event-photography", "business-cards"]
+  },
+  {
+    "id": "svc_009",
+    "slug": "branded-t-shirts",
+    "name": "Branded T-Shirts",
+    "category": "gifts",
+    "tagline": "Soft, durable tees your team will actually wear.",
+    "description": "Ring-spun cotton, organic and performance tees decorated with vibrant screen printing or crisp embroidery. Great for staff uniforms, event crews, campaigns and fan merch. Sizes XS to 4XL in 30+ colours.",
+    "basePrice": 12,
+    "unit": "shirt",
+    "popularity": 92,
+    "rating": 4.8,
+    "reviews": 2045,
+    "createdAt": "2025-01-20",
+    "useCases": ["events", "onboarding", "marketing"],
+    "industries": ["tech", "hospitality", "retail", "education", "nonprofit", "creative"],
+    "urgency": "standard",
+    "turnaround": { "min": 5, "max": 8, "express": 3 },
+    "includes": [
+      "Free mock-up on your chosen colour",
+      "Sizes XS–4XL, mix freely",
+      "Wash-tested inks and threads",
+      "Individually folded and bagged"
+    ],
+    "options": [
+      {
+        "id": "fabric",
+        "label": "Fabric",
+        "choices": [
+          { "id": "cotton", "label": "Ring-spun cotton", "delta": 0 },
+          { "id": "organic", "label": "Organic cotton", "delta": 3 },
+          { "id": "performance", "label": "Performance blend", "delta": 4 }
+        ]
+      },
+      {
+        "id": "decoration",
+        "label": "Decoration",
+        "choices": [
+          { "id": "front", "label": "Front print", "delta": 0 },
+          { "id": "both", "label": "Front + back print", "delta": 3.5 },
+          { "id": "embroidery", "label": "Embroidered logo", "delta": 5 }
+        ]
+      }
+    ],
+    "quantity": { "min": 10, "max": 5000, "step": 5 },
+    "tiers": [
+      { "min": 50, "percent": 10 },
+      { "min": 150, "percent": 18 },
+      { "min": 500, "percent": 25 }
+    ],
+    "tags": ["t-shirt", "tshirt", "tee", "shirt", "apparel", "uniform", "merch", "clothing", "swag"],
+    "art": { "kind": "apparel", "palette": ["#FFC93C", "#FF6A4D", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["logo-design", "event-backdrop", "roll-up-banner", "event-photography"]
+  },
+  {
+    "id": "svc_010",
+    "slug": "branded-hoodies",
+    "name": "Branded Hoodies",
+    "category": "gifts",
+    "tagline": "Heavyweight comfort with premium embroidery.",
+    "description": "Cosy, structured hoodies that feel like retail streetwear, not giveaway merch. Pick midweight or heavyweight fleece and decorate with print or embroidery — the go-to gift for team retreats and community drops.",
+    "basePrice": 32,
+    "unit": "hoodie",
+    "badge": "Trending",
+    "popularity": 86,
+    "rating": 4.9,
+    "reviews": 1132,
+    "createdAt": "2025-10-01",
+    "useCases": ["onboarding", "gifting", "events"],
+    "industries": ["tech", "creative", "education", "retail"],
+    "urgency": "standard",
+    "turnaround": { "min": 6, "max": 9, "express": 4 },
+    "includes": [
+      "Free digital mock-up",
+      "Sizes XS–4XL",
+      "Premium embroidery or print",
+      "Individually bagged with size labels"
+    ],
+    "options": [
+      {
+        "id": "weight",
+        "label": "Fleece",
+        "choices": [
+          { "id": "mid", "label": "Midweight 300gsm", "delta": 0 },
+          { "id": "heavy", "label": "Heavyweight 400gsm", "delta": 8 }
+        ]
+      },
+      {
+        "id": "decoration",
+        "label": "Decoration",
+        "choices": [
+          { "id": "print", "label": "Screen print", "delta": 0 },
+          { "id": "embroidery", "label": "Embroidery", "delta": 6 }
+        ]
+      }
+    ],
+    "quantity": { "min": 10, "max": 2000, "step": 5 },
+    "tiers": [
+      { "min": 50, "percent": 8 },
+      { "min": 150, "percent": 15 }
+    ],
+    "tags": ["hoodie", "hoodies", "sweatshirt", "jumper", "apparel", "merch", "swag", "clothing", "winter"],
+    "art": { "kind": "apparel", "palette": ["#16123A", "#3B1FB8", "#FF6A4D", "#FFFFFF"] },
+    "pairsWith": ["logo-design", "custom-stickers", "team-headshots", "branded-water-bottles"]
+  },
+  {
+    "id": "svc_011",
+    "slug": "branded-tote-bags",
+    "name": "Branded Tote Bags",
+    "category": "gifts",
+    "tagline": "Sustainable totes that carry your brand everywhere.",
+    "description": "Sturdy cotton, organic canvas and jute totes printed in one to full colour. A conference favourite and a retail packaging upgrade — reusable, eco-friendly and seen all over town.",
+    "basePrice": 6.5,
+    "unit": "bag",
+    "popularity": 78,
+    "rating": 4.7,
+    "reviews": 940,
+    "createdAt": "2025-05-11",
+    "useCases": ["events", "gifting", "marketing"],
+    "industries": ["retail", "education", "creative", "nonprofit", "hospitality"],
+    "urgency": "standard",
+    "turnaround": { "min": 5, "max": 8, "express": 3 },
+    "includes": [
+      "Free artwork setup and proof",
+      "Reinforced handles",
+      "Eco-friendly water-based inks",
+      "Bulk-packed in recyclable cartons"
+    ],
+    "options": [
+      {
+        "id": "material",
+        "label": "Material",
+        "choices": [
+          { "id": "cotton", "label": "Cotton canvas", "delta": 0 },
+          { "id": "organic", "label": "Organic heavy canvas", "delta": 2.5 },
+          { "id": "jute", "label": "Jute", "delta": 3 }
+        ]
+      },
+      {
+        "id": "colours",
+        "label": "Print colours",
+        "choices": [
+          { "id": "1", "label": "1 colour", "delta": 0 },
+          { "id": "2", "label": "2 colours", "delta": 0.8 },
+          { "id": "full", "label": "Full colour", "delta": 1.6 }
+        ]
+      }
+    ],
+    "quantity": { "min": 25, "max": 5000, "step": 25 },
+    "tiers": [
+      { "min": 100, "percent": 10 },
+      { "min": 500, "percent": 20 }
+    ],
+    "tags": ["tote", "bag", "tote bag", "shopping bag", "canvas", "eco", "merch", "conference"],
+    "art": { "kind": "tote", "palette": ["#2BD9A0", "#00B8C2", "#16123A", "#FFF7E8"] },
+    "pairsWith": ["branded-notebooks", "custom-stickers", "flyers", "packaging-design"]
+  },
+  {
+    "id": "svc_012",
+    "slug": "branded-water-bottles",
+    "name": "Branded Water Bottles",
+    "category": "gifts",
+    "tagline": "Insulated bottles with laser-sharp branding.",
+    "description": "Double-walled stainless steel and borosilicate glass bottles that keep drinks cold for 24 hours. Laser engraving gives a permanent, premium finish; full-colour print lets your artwork pop.",
+    "basePrice": 14,
+    "unit": "bottle",
+    "discount": { "percent": 10, "label": "Seasonal offer" },
+    "popularity": 74,
+    "rating": 4.8,
+    "reviews": 712,
+    "createdAt": "2025-08-27",
+    "useCases": ["gifting", "onboarding", "events"],
+    "industries": ["tech", "health", "education", "finance"],
+    "urgency": "standard",
+    "turnaround": { "min": 6, "max": 9, "express": 4 },
+    "includes": [
+      "Free proof before production",
+      "BPA-free, leak-proof lid",
+      "Gift-ready individual boxes",
+      "Choice of 12 bottle colours"
+    ],
+    "options": [
+      {
+        "id": "type",
+        "label": "Bottle",
+        "choices": [
+          { "id": "steel500", "label": "Steel insulated 500ml", "delta": 0 },
+          { "id": "steel750", "label": "Steel insulated 750ml", "delta": 4 },
+          { "id": "glass", "label": "Glass with sleeve", "delta": 1 }
+        ]
+      },
+      {
+        "id": "branding",
+        "label": "Branding",
+        "choices": [
+          { "id": "print", "label": "Full-colour print", "delta": 0 },
+          { "id": "engrave", "label": "Laser engraving", "delta": 2.5 }
+        ]
+      }
+    ],
+    "quantity": { "min": 12, "max": 2000, "step": 6 },
+    "tiers": [
+      { "min": 60, "percent": 8 },
+      { "min": 200, "percent": 15 }
+    ],
+    "tags": ["water bottle", "bottle", "flask", "tumbler", "drinkware", "merch", "swag", "gift"],
+    "art": { "kind": "bottle", "palette": ["#00B8C2", "#7DE3E9", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["branded-hoodies", "logo-design", "team-headshots", "custom-stickers"]
+  },
+  {
+    "id": "svc_013",
+    "slug": "branded-notebooks",
+    "name": "Branded Notebooks",
+    "category": "gifts",
+    "tagline": "Debossed, foil-stamped notebooks for big ideas.",
+    "description": "Lay-flat notebooks with soft-touch or vegan leather covers, finished with debossing or foil stamping. Includes ribbon marker, elastic closure and 160 pages of premium paper — a gift people genuinely use.",
+    "basePrice": 8,
+    "unit": "notebook",
+    "popularity": 68,
+    "rating": 4.8,
+    "reviews": 511,
+    "createdAt": "2025-07-15",
+    "useCases": ["gifting", "onboarding", "events"],
+    "industries": ["finance", "education", "tech", "creative"],
+    "urgency": "standard",
+    "turnaround": { "min": 6, "max": 8 },
+    "includes": [
+      "160 pages of 100gsm paper",
+      "Ribbon marker and elastic closure",
+      "Debossed or foil-stamped logo",
+      "Back pocket for cards and notes"
+    ],
+    "options": [
+      {
+        "id": "size",
+        "label": "Size",
+        "choices": [
+          { "id": "a5", "label": "A5", "delta": 0 },
+          { "id": "a6", "label": "A6 pocket", "delta": -1.5 }
+        ]
+      },
+      {
+        "id": "cover",
+        "label": "Cover",
+        "choices": [
+          { "id": "soft", "label": "Soft-touch", "delta": 0 },
+          { "id": "leather", "label": "Vegan leather", "delta": 4 }
+        ]
+      }
+    ],
+    "quantity": { "min": 20, "max": 3000, "step": 10 },
+    "tiers": [
+      { "min": 100, "percent": 10 },
+      { "min": 300, "percent": 18 }
+    ],
+    "tags": ["notebook", "journal", "notepad", "stationery", "gift", "merch"],
+    "art": { "kind": "notebook", "palette": ["#FF5FA2", "#FFC93C", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["letterhead-stationery", "business-cards", "logo-design"]
+  },
+  {
+    "id": "svc_014",
+    "slug": "corporate-gift-box",
+    "name": "Corporate Gift Box",
+    "category": "gifts",
+    "tagline": "Curated, branded gift boxes delivered to every desk.",
+    "description": "Thoughtfully curated boxes of branded goodies, packed in a custom printed box with a personal note. We source, brand, pack and ship to individual addresses or a single office — perfect for onboarding, client thank-yous and festive seasons.",
+    "basePrice": 65,
+    "unit": "box",
+    "badge": "Staff pick",
+    "popularity": 83,
+    "rating": 4.9,
+    "reviews": 640,
+    "createdAt": "2025-11-02",
+    "useCases": ["gifting", "onboarding", "events"],
+    "industries": ["tech", "finance", "health", "education"],
+    "urgency": "flexible",
+    "turnaround": { "min": 10, "max": 14 },
+    "includes": [
+      "Custom printed gift box",
+      "Curated, branded items",
+      "Personalised note card",
+      "Individual or bulk delivery"
+    ],
+    "options": [
+      {
+        "id": "box",
+        "label": "Box",
+        "choices": [
+          { "id": "essentials", "label": "Essentials", "delta": 0, "hint": "Mug, notebook, pen" },
+          { "id": "wellness", "label": "Wellness", "delta": 25, "hint": "Bottle, candle, tea" },
+          { "id": "deluxe", "label": "Deluxe", "delta": 55, "hint": "Hoodie, bottle, notebook" }
+        ]
+      },
+      {
+        "id": "note",
+        "label": "Note card",
+        "choices": [
+          { "id": "printed", "label": "Printed", "delta": 0 },
+          { "id": "handwritten", "label": "Handwritten", "delta": 3 }
+        ]
+      }
+    ],
+    "quantity": { "min": 5, "max": 1000, "step": 5 },
+    "tiers": [
+      { "min": 25, "percent": 6 },
+      { "min": 100, "percent": 12 }
+    ],
+    "tags": ["gift box", "hamper", "swag box", "welcome pack", "christmas", "festive", "client gift", "onboarding kit"],
+    "art": { "kind": "giftbox", "palette": ["#FF6A4D", "#FFC93C", "#6D3BFF", "#FFFFFF"] },
+    "pairsWith": ["packaging-design", "team-headshots", "letterhead-stationery"]
+  },
+  {
+    "id": "svc_015",
+    "slug": "branded-pens",
+    "name": "Branded Pens",
+    "category": "gifts",
+    "tagline": "Small, smart and endlessly handed around.",
+    "description": "Smooth-writing pens in plastic, bamboo or metal, printed or engraved with your logo. The most cost-effective way to keep your brand in hands at events, clinics, schools and front desks.",
+    "basePrice": 1.2,
+    "unit": "pen",
+    "popularity": 60,
+    "rating": 4.6,
+    "reviews": 1290,
+    "createdAt": "2024-11-30",
+    "useCases": ["events", "marketing", "gifting"],
+    "industries": ["education", "health", "finance", "hospitality", "nonprofit"],
+    "urgency": "express",
+    "turnaround": { "min": 2, "max": 3 },
+    "includes": ["Free artwork setup", "Choice of ink colours", "Bulk-packed"],
+    "options": [
+      {
+        "id": "pen",
+        "label": "Pen",
+        "choices": [
+          { "id": "plastic", "label": "Plastic click", "delta": 0 },
+          { "id": "bamboo", "label": "Bamboo", "delta": 0.6 },
+          { "id": "metal", "label": "Metal, engraved", "delta": 1.3 }
+        ]
+      }
+    ],
+    "quantity": { "min": 100, "max": 20000, "step": 50 },
+    "tiers": [
+      { "min": 500, "percent": 12 },
+      { "min": 2000, "percent": 25 }
+    ],
+    "tags": ["pen", "pens", "ballpoint", "stationery", "giveaway", "merch"],
+    "art": { "kind": "pen", "palette": ["#FFC93C", "#FFE08A", "#6D3BFF", "#16123A"] },
+    "pairsWith": ["branded-notebooks", "business-cards", "letterhead-stationery"]
+  },
+  {
+    "id": "svc_016",
+    "slug": "copywriting",
+    "name": "Brand Copywriting",
+    "category": "create",
+    "tagline": "Words that sound like you — and sell like crazy.",
+    "description": "From a tagline and About page to complete website copy and messaging frameworks, our copywriters capture your voice and translate it into words that build trust and drive action. Every project starts with a voice workshop.",
+    "basePrice": 199,
+    "unit": "project",
+    "popularity": 66,
+    "rating": 4.8,
+    "reviews": 388,
+    "createdAt": "2025-04-02",
+    "useCases": ["launch", "marketing", "social"],
+    "industries": ["tech", "health", "finance", "retail", "hospitality", "nonprofit"],
+    "urgency": "standard",
+    "turnaround": { "min": 3, "max": 7, "express": 2 },
+    "includes": [
+      "Brand voice workshop",
+      "Tone of voice cheat sheet",
+      "SEO-aware copy",
+      "2 rounds of revisions"
+    ],
+    "options": [
+      {
+        "id": "scope",
+        "label": "Scope",
+        "choices": [
+          { "id": "tagline", "label": "Tagline + About", "delta": 0 },
+          { "id": "website", "label": "Website (up to 5 pages)", "delta": 300 },
+          { "id": "messaging", "label": "Full messaging framework", "delta": 600 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 3, "step": 1 },
+    "tags": ["copywriting", "copy", "tagline", "slogan", "content", "writing", "messaging", "about page"],
+    "art": { "kind": "copy", "palette": ["#FF5FA2", "#FFA6CB", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["landing-page-design", "pitch-deck-design", "social-media-kit"]
+  },
+  {
+    "id": "svc_017",
+    "slug": "brand-naming",
+    "name": "Brand Naming",
+    "category": "create",
+    "tagline": "A memorable name with an available domain.",
+    "description": "Our naming strategists explore descriptive, evocative and invented directions, screen for domain and social-handle availability, and present a shortlist with rationale. Optional trademark pre-screening gives you extra confidence.",
+    "basePrice": 449,
+    "unit": "project",
+    "popularity": 55,
+    "rating": 4.8,
+    "reviews": 146,
+    "createdAt": "2025-08-08",
+    "useCases": ["launch"],
+    "industries": ["tech", "retail", "health", "hospitality", "creative"],
+    "urgency": "flexible",
+    "turnaround": { "min": 7, "max": 10 },
+    "includes": [
+      "Naming brief workshop",
+      "Domain and social handle checks",
+      "Pronunciation and meaning checks",
+      "Presentation with rationale"
+    ],
+    "options": [
+      {
+        "id": "shortlist",
+        "label": "Shortlist",
+        "choices": [
+          { "id": "10", "label": "10 names", "delta": 0 },
+          { "id": "25", "label": "25 names", "delta": 250 }
+        ]
+      },
+      {
+        "id": "trademark",
+        "label": "Trademark screen",
+        "choices": [
+          { "id": "none", "label": "Not needed", "delta": 0 },
+          { "id": "screen", "label": "Pre-screen top 3", "delta": 150 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 2, "step": 1 },
+    "tags": ["naming", "brand name", "business name", "company name", "domain", "trademark"],
+    "art": { "kind": "copy", "palette": ["#16123A", "#6D3BFF", "#FF5FA2", "#FFFFFF"] },
+    "pairsWith": ["logo-design", "brand-identity-kit", "pitch-deck-design"]
+  },
+  {
+    "id": "svc_018",
+    "slug": "illustration",
+    "name": "Custom Brand Illustration",
+    "category": "create",
+    "tagline": "Ownable illustrations in a style made just for you.",
+    "description": "Bespoke illustrations for websites, packaging, social and campaigns. We develop a consistent illustration style that becomes a recognisable part of your brand, in flat, line or 3D-rendered looks.",
+    "basePrice": 159,
+    "unit": "illustration",
+    "discount": { "percent": 10, "label": "First order" },
+    "popularity": 62,
+    "rating": 4.9,
+    "reviews": 274,
+    "createdAt": "2025-12-01",
+    "useCases": ["marketing", "social", "launch"],
+    "industries": ["tech", "education", "creative", "health", "nonprofit"],
+    "urgency": "standard",
+    "turnaround": { "min": 4, "max": 7 },
+    "includes": [
+      "Style exploration sketches",
+      "Full-colour final artwork",
+      "Layered source files",
+      "Commercial usage rights"
+    ],
+    "options": [
+      {
+        "id": "style",
+        "label": "Style",
+        "choices": [
+          { "id": "flat", "label": "Flat vector", "delta": 0 },
+          { "id": "line", "label": "Line art", "delta": 0 },
+          { "id": "3d", "label": "3D rendered", "delta": 90 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 20, "step": 1 },
+    "tiers": [
+      { "min": 5, "percent": 10 },
+      { "min": 10, "percent": 18 }
+    ],
+    "tags": ["illustration", "drawing", "artwork", "graphics", "icons", "3d", "vector"],
+    "art": { "kind": "illustration", "palette": ["#FFC93C", "#FF5FA2", "#6D3BFF", "#16123A"] },
+    "pairsWith": ["landing-page-design", "packaging-design", "pitch-deck-design", "custom-stickers"]
+  },
+  {
+    "id": "svc_019",
+    "slug": "packaging-design",
+    "name": "Packaging & Label Design",
+    "category": "create",
+    "tagline": "Shelf-stopping packaging that flies off the shelf.",
+    "description": "Print-ready labels, boxes and pouches designed to stand out on crowded shelves and look great in unboxing videos. We handle dielines, regulatory panels and supplier-ready artwork.",
+    "basePrice": 499,
+    "unit": "design",
+    "popularity": 70,
+    "rating": 4.8,
+    "reviews": 302,
+    "createdAt": "2025-05-30",
+    "useCases": ["launch", "marketing"],
+    "industries": ["retail", "health", "hospitality"],
+    "urgency": "flexible",
+    "turnaround": { "min": 8, "max": 12 },
+    "includes": [
+      "Market and shelf research",
+      "2 design directions",
+      "3D mock-ups",
+      "Print-ready dielines"
+    ],
+    "options": [
+      {
+        "id": "format",
+        "label": "Format",
+        "choices": [
+          { "id": "label", "label": "Label", "delta": 0 },
+          { "id": "box", "label": "Box / carton", "delta": 200 },
+          { "id": "range", "label": "Full product range", "delta": 700 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 10, "step": 1 },
+    "tiers": [{ "min": 3, "percent": 10 }],
+    "tags": ["packaging", "label", "box", "pouch", "product", "dieline", "unboxing"],
+    "art": { "kind": "packaging", "palette": ["#2BD9A0", "#FFC93C", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["product-photography", "custom-stickers", "brand-identity-kit"]
+  },
+  {
+    "id": "svc_020",
+    "slug": "mascot-design",
+    "name": "Mascot & Character Design",
+    "category": "create",
+    "tagline": "A lovable character that becomes the face of your brand.",
+    "description": "We design an expressive mascot with a personality sheet, poses and expressions — ready for social, packaging, apps and merch. Characters are one of the fastest ways to make a brand memorable.",
+    "basePrice": 399,
+    "unit": "character",
+    "badge": "New",
+    "popularity": 48,
+    "rating": 4.9,
+    "reviews": 87,
+    "createdAt": "2026-08-20",
+    "useCases": ["marketing", "social", "launch"],
+    "industries": ["education", "hospitality", "retail", "tech"],
+    "urgency": "flexible",
+    "turnaround": { "min": 8, "max": 12 },
+    "includes": [
+      "Character concept sketches",
+      "Personality sheet",
+      "6 poses and expressions",
+      "Vector source files"
+    ],
+    "options": [
+      {
+        "id": "poses",
+        "label": "Poses",
+        "choices": [
+          { "id": "6", "label": "6 poses", "delta": 0 },
+          { "id": "12", "label": "12 poses", "delta": 180 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 3, "step": 1 },
+    "tags": ["mascot", "character", "cartoon", "avatar", "illustration"],
+    "art": { "kind": "illustration", "palette": ["#00B8C2", "#2BD9A0", "#FF6A4D", "#16123A"] },
+    "pairsWith": ["custom-stickers", "branded-t-shirts", "social-media-kit"]
+  },
+  {
+    "id": "svc_021",
+    "slug": "infographic-design",
+    "name": "Infographic & Report Design",
+    "category": "create",
+    "tagline": "Turn dense data into visuals people share.",
+    "description": "Clear, beautiful infographics and annual reports that make complex information easy to digest. Ideal for impact reports, investor updates, research and social carousels.",
+    "basePrice": 129,
+    "unit": "page",
+    "popularity": 45,
+    "rating": 4.7,
+    "reviews": 121,
+    "createdAt": "2025-02-27",
+    "useCases": ["marketing", "social"],
+    "industries": ["nonprofit", "finance", "education", "health"],
+    "urgency": "standard",
+    "turnaround": { "min": 3, "max": 6 },
+    "includes": ["Data review", "Custom charts and icons", "Print and web exports", "2 rounds of revisions"],
+    "options": [
+      {
+        "id": "format",
+        "label": "Format",
+        "choices": [
+          { "id": "single", "label": "Single infographic", "delta": 0 },
+          { "id": "report", "label": "Report pages", "delta": 20 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 40, "step": 1 },
+    "tiers": [
+      { "min": 8, "percent": 10 },
+      { "min": 20, "percent": 20 }
+    ],
+    "tags": ["infographic", "report", "annual report", "data", "charts", "impact report"],
+    "art": { "kind": "deck", "palette": ["#FFA6CB", "#FF5FA2", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["pitch-deck-design", "flyers", "social-media-kit"]
+  },
+  {
+    "id": "svc_022",
+    "slug": "product-photography",
+    "name": "Product Photography",
+    "category": "studio",
+    "tagline": "Crisp, consistent product shots for every channel.",
+    "description": "Studio-lit packshots, flat lays and styled lifestyle scenes captured by professional photographers. Send us your products and receive retouched, marketplace-ready images optimised for your website, Amazon, Jumia, Etsy and social.",
+    "basePrice": 25,
+    "unit": "photo",
+    "badge": "Bestseller",
+    "popularity": 87,
+    "rating": 4.9,
+    "reviews": 1580,
+    "createdAt": "2025-03-03",
+    "useCases": ["marketing", "launch", "social"],
+    "industries": ["retail", "health", "hospitality", "creative"],
+    "urgency": "standard",
+    "turnaround": { "min": 4, "max": 7, "express": 3 },
+    "includes": [
+      "Professional studio lighting",
+      "Colour-accurate retouching",
+      "Web and print resolution files",
+      "Marketplace-compliant crops",
+      "Free product return shipping"
+    ],
+    "options": [
+      {
+        "id": "style",
+        "label": "Style",
+        "choices": [
+          { "id": "white", "label": "White background", "delta": 0 },
+          { "id": "flatlay", "label": "Flat lay", "delta": 8 },
+          { "id": "lifestyle", "label": "Styled lifestyle", "delta": 15 }
+        ]
+      },
+      {
+        "id": "retouch",
+        "label": "Retouching",
+        "choices": [
+          { "id": "standard", "label": "Standard", "delta": 0 },
+          { "id": "advanced", "label": "Advanced", "delta": 6 }
+        ]
+      }
+    ],
+    "quantity": { "min": 5, "max": 500, "step": 5 },
+    "tiers": [
+      { "min": 20, "percent": 10 },
+      { "min": 50, "percent": 18 }
+    ],
+    "tags": ["photography", "photo", "photos", "product shots", "packshot", "ecommerce", "flat lay", "lifestyle"],
+    "art": { "kind": "camera", "palette": ["#00B8C2", "#7DE3E9", "#FFC93C", "#16123A"] },
+    "pairsWith": ["packaging-design", "social-media-kit", "landing-page-design"]
+  },
+  {
+    "id": "svc_023",
+    "slug": "brand-video",
+    "name": "Brand Story Video",
+    "category": "studio",
+    "tagline": "A cinematic film that shows who you are.",
+    "description": "From script to screen, we produce a short brand film with professional crew, lighting, sound and colour grading. Perfect for your homepage, launch campaign, investor pitch or recruitment.",
+    "basePrice": 1200,
+    "unit": "film",
+    "popularity": 72,
+    "rating": 4.9,
+    "reviews": 204,
+    "createdAt": "2025-06-30",
+    "useCases": ["launch", "marketing", "social"],
+    "industries": ["tech", "hospitality", "health", "nonprofit", "finance"],
+    "urgency": "flexible",
+    "turnaround": { "min": 14, "max": 21 },
+    "includes": [
+      "Creative concept and script",
+      "Half-day shoot with crew",
+      "Licensed music and sound design",
+      "Colour grade and captions",
+      "Social cut-downs"
+    ],
+    "options": [
+      {
+        "id": "length",
+        "label": "Length",
+        "choices": [
+          { "id": "30", "label": "30 seconds", "delta": 0 },
+          { "id": "60", "label": "60 seconds", "delta": 600 },
+          { "id": "120", "label": "2 minutes", "delta": 1400 }
+        ]
+      },
+      {
+        "id": "crew",
+        "label": "Crew",
+        "choices": [
+          { "id": "lean", "label": "Lean crew", "delta": 0 },
+          { "id": "full", "label": "Full production crew", "delta": 900 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 3, "step": 1 },
+    "tags": ["video", "film", "brand video", "commercial", "promo", "documentary", "production"],
+    "art": { "kind": "video", "palette": ["#16123A", "#00B8C2", "#FF6A4D", "#FFFFFF"] },
+    "pairsWith": ["motion-logo", "landing-page-design", "copywriting"]
+  },
+  {
+    "id": "svc_024",
+    "slug": "team-headshots",
+    "name": "Team Headshots",
+    "category": "studio",
+    "tagline": "Consistent, flattering headshots for the whole team.",
+    "description": "Professional headshots in our studio or on-site at your office, with consistent lighting and backgrounds so your team page looks cohesive. Includes light retouching and fast 48-hour delivery.",
+    "basePrice": 45,
+    "unit": "person",
+    "popularity": 69,
+    "rating": 4.9,
+    "reviews": 590,
+    "createdAt": "2025-02-14",
+    "useCases": ["onboarding", "marketing"],
+    "industries": ["finance", "tech", "health", "education"],
+    "urgency": "express",
+    "turnaround": { "min": 1, "max": 2 },
+    "includes": [
+      "Professional photographer",
+      "3 retouched images per person",
+      "Consistent background",
+      "Delivery within 48 hours"
+    ],
+    "options": [
+      {
+        "id": "location",
+        "label": "Location",
+        "choices": [
+          { "id": "studio", "label": "Our studio", "delta": 0 },
+          { "id": "onsite", "label": "On-site at your office", "delta": 20 }
+        ]
+      },
+      {
+        "id": "retouch",
+        "label": "Retouching",
+        "choices": [
+          { "id": "natural", "label": "Natural", "delta": 0 },
+          { "id": "premium", "label": "Premium", "delta": 10 }
+        ]
+      }
+    ],
+    "quantity": { "min": 3, "max": 300, "step": 1 },
+    "tiers": [
+      { "min": 10, "percent": 10 },
+      { "min": 30, "percent": 20 }
+    ],
+    "tags": ["headshots", "portrait", "photography", "team photos", "linkedin", "profile photo"],
+    "art": { "kind": "headshot", "palette": ["#7DE3E9", "#00B8C2", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["email-signature", "business-cards", "pitch-deck-design"]
+  },
+  {
+    "id": "svc_025",
+    "slug": "event-photography",
+    "name": "Event Photography",
+    "category": "studio",
+    "tagline": "Every handshake, keynote and candid moment, captured.",
+    "description": "Experienced event photographers for launches, conferences, weddings-meets-business owambes and award nights. Get a same-day highlights selection for social plus a full edited gallery within 48 hours.",
+    "basePrice": 380,
+    "unit": "event",
+    "popularity": 79,
+    "rating": 4.8,
+    "reviews": 455,
+    "createdAt": "2025-09-18",
+    "useCases": ["events", "marketing", "social"],
+    "industries": ["hospitality", "tech", "nonprofit", "education", "creative"],
+    "urgency": "express",
+    "turnaround": { "min": 1, "max": 2 },
+    "includes": [
+      "Same-day social highlights",
+      "Full edited gallery in 48 hours",
+      "Online gallery for guests",
+      "Commercial usage rights"
+    ],
+    "options": [
+      {
+        "id": "coverage",
+        "label": "Coverage",
+        "choices": [
+          { "id": "half", "label": "Half day (4 hrs)", "delta": 0 },
+          { "id": "full", "label": "Full day (8 hrs)", "delta": 320 },
+          { "id": "photo-video", "label": "Full day photo + video", "delta": 700 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 5, "step": 1 },
+    "tags": ["event photography", "photographer", "conference", "launch party", "owambe", "coverage", "photos"],
+    "art": { "kind": "camera", "palette": ["#16123A", "#6D3BFF", "#FFC93C", "#FFFFFF"] },
+    "pairsWith": ["event-backdrop", "roll-up-banner", "branded-t-shirts"]
+  },
+  {
+    "id": "svc_026",
+    "slug": "social-video-content",
+    "name": "Reels & TikTok Content Pack",
+    "category": "studio",
+    "tagline": "Short-form videos made to stop the scroll.",
+    "description": "A monthly pack of vertical videos scripted, filmed and edited for Reels, TikTok and Shorts. We plan hooks and trends with you, then deliver captioned, ready-to-post videos.",
+    "basePrice": 279,
+    "unit": "pack",
+    "badge": "Trending",
+    "popularity": 84,
+    "rating": 4.7,
+    "reviews": 366,
+    "createdAt": "2026-03-05",
+    "useCases": ["social", "marketing"],
+    "industries": ["retail", "health", "hospitality", "creative", "education"],
+    "urgency": "standard",
+    "turnaround": { "min": 5, "max": 7 },
+    "includes": [
+      "Hook and trend planning",
+      "Filming and editing",
+      "Captions and on-screen text",
+      "Licensed audio"
+    ],
+    "options": [
+      {
+        "id": "videos",
+        "label": "Videos",
+        "choices": [
+          { "id": "4", "label": "4 videos", "delta": 0 },
+          { "id": "8", "label": "8 videos", "delta": 220 },
+          { "id": "12", "label": "12 videos", "delta": 420 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 6, "step": 1 },
+    "tiers": [{ "min": 3, "percent": 10 }],
+    "tags": ["reels", "tiktok", "shorts", "video", "ugc", "social media", "content"],
+    "art": { "kind": "video", "palette": ["#FF5FA2", "#6D3BFF", "#FFC93C", "#FFFFFF"] },
+    "pairsWith": ["social-media-kit", "motion-logo", "product-photography"]
+  },
+  {
+    "id": "svc_027",
+    "slug": "brand-voiceover",
+    "name": "Brand Voiceover",
+    "category": "studio",
+    "tagline": "Professional voice talent for ads, IVR and explainers.",
+    "description": "Choose from a roster of professional voice artists across accents including Nigerian, American, British and Canadian English and French. Recorded in broadcast-quality studios with fast turnaround.",
+    "basePrice": 89,
+    "unit": "script",
+    "popularity": 41,
+    "rating": 4.8,
+    "reviews": 97,
+    "createdAt": "2026-01-22",
+    "useCases": ["marketing", "social"],
+    "industries": ["tech", "finance", "education", "health"],
+    "urgency": "express",
+    "turnaround": { "min": 1, "max": 2 },
+    "includes": ["Casting from 3 voices", "Broadcast-quality WAV", "1 round of pickups"],
+    "options": [
+      {
+        "id": "length",
+        "label": "Script length",
+        "choices": [
+          { "id": "60", "label": "Up to 60 words", "delta": 0 },
+          { "id": "150", "label": "Up to 150 words", "delta": 60 },
+          { "id": "400", "label": "Up to 400 words", "delta": 160 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 10, "step": 1 },
+    "tags": ["voiceover", "voice", "audio", "radio ad", "ivr", "narration", "podcast"],
+    "art": { "kind": "video", "palette": ["#2BD9A0", "#00B8C2", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["brand-video", "motion-logo", "social-video-content"]
+  },
+  {
+    "id": "svc_028",
+    "slug": "business-cards",
+    "name": "Business Cards",
+    "category": "prints",
+    "tagline": "First impressions on thick, luxurious stock.",
+    "description": "Premium business cards on heavyweight stocks with optional spot UV and foil finishes. Upload your design or let our team set it up for free. Every order includes a digital proof and colour check.",
+    "basePrice": 29,
+    "unit": "pack of 100",
+    "badge": "Bestseller",
+    "popularity": 96,
+    "rating": 4.9,
+    "reviews": 4870,
+    "createdAt": "2024-10-10",
+    "useCases": ["launch", "onboarding", "events"],
+    "industries": ["tech", "hospitality", "retail", "finance", "education", "health", "creative", "nonprofit"],
+    "urgency": "express",
+    "turnaround": { "min": 2, "max": 3 },
+    "includes": [
+      "Free design setup",
+      "Digital proof before print",
+      "Rounded or square corners",
+      "Protective presentation box"
+    ],
+    "options": [
+      {
+        "id": "paper",
+        "label": "Paper",
+        "choices": [
+          { "id": "standard", "label": "Standard 350gsm", "delta": 0 },
+          { "id": "recycled", "label": "Recycled 400gsm", "delta": 6 },
+          { "id": "matte", "label": "Premium matte 450gsm", "delta": 12 },
+          { "id": "cotton", "label": "Luxe cotton 600gsm", "delta": 28 }
+        ]
+      },
+      {
+        "id": "finish",
+        "label": "Finish",
+        "choices": [
+          { "id": "none", "label": "None", "delta": 0 },
+          { "id": "spotuv", "label": "Spot UV", "delta": 10 },
+          { "id": "foil", "label": "Gold foil", "delta": 18 }
+        ]
+      },
+      {
+        "id": "sides",
+        "label": "Sides",
+        "choices": [
+          { "id": "single", "label": "Single-sided", "delta": 0 },
+          { "id": "double", "label": "Double-sided", "delta": 5 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 50, "step": 1 },
+    "tiers": [
+      { "min": 5, "percent": 10 },
+      { "min": 10, "percent": 18 }
+    ],
+    "tags": ["business cards", "cards", "visiting cards", "name cards", "print", "stationery", "contact card"],
+    "art": { "kind": "card", "palette": ["#FFC93C", "#FFE08A", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["logo-design", "letterhead-stationery", "branded-notebooks", "email-signature"]
+  },
+  {
+    "id": "svc_029",
+    "slug": "flyers",
+    "name": "Flyers & Leaflets",
+    "category": "prints",
+    "tagline": "Vivid flyers that get picked up — and read.",
+    "description": "Full-colour flyers and leaflets on silk or gloss paper, perfect for promotions, menus, church and community events, and door drops. Free design check included.",
+    "basePrice": 45,
+    "unit": "pack of 250",
+    "discount": { "percent": 12, "label": "Promo week" },
+    "popularity": 73,
+    "rating": 4.7,
+    "reviews": 1760,
+    "createdAt": "2024-12-02",
+    "useCases": ["marketing", "events"],
+    "industries": ["hospitality", "retail", "education", "nonprofit", "health"],
+    "urgency": "express",
+    "turnaround": { "min": 2, "max": 3 },
+    "includes": ["Free file check", "Full-colour both sides", "Trimmed and packed"],
+    "options": [
+      {
+        "id": "size",
+        "label": "Size",
+        "choices": [
+          { "id": "a5", "label": "A5", "delta": 0 },
+          { "id": "a4", "label": "A4", "delta": 30 },
+          { "id": "dl", "label": "DL", "delta": -5 }
+        ]
+      },
+      {
+        "id": "paper",
+        "label": "Paper",
+        "choices": [
+          { "id": "130", "label": "130gsm silk", "delta": 0 },
+          { "id": "170", "label": "170gsm gloss", "delta": 12 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 40, "step": 1 },
+    "tiers": [
+      { "min": 4, "percent": 10 },
+      { "min": 10, "percent": 20 }
+    ],
+    "tags": ["flyers", "leaflets", "handbills", "brochure", "menu", "print", "promo"],
+    "art": { "kind": "flyer", "palette": ["#FF6A4D", "#FFC93C", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["social-media-kit", "infographic-design", "copywriting"]
+  },
+  {
+    "id": "svc_030",
+    "slug": "posters",
+    "name": "Large Format Posters",
+    "category": "prints",
+    "tagline": "Gallery-grade posters, from A2 to A0.",
+    "description": "Rich, saturated posters printed on satin photo paper with archival inks. Ideal for shopfronts, offices, events and campaigns. Optional lamination for outdoor use.",
+    "basePrice": 18,
+    "unit": "poster",
+    "popularity": 58,
+    "rating": 4.8,
+    "reviews": 820,
+    "createdAt": "2025-03-12",
+    "useCases": ["marketing", "events"],
+    "industries": ["retail", "hospitality", "creative", "education"],
+    "urgency": "express",
+    "turnaround": { "min": 2, "max": 3 },
+    "includes": ["Archival pigment inks", "Satin photo paper", "Rolled in a protective tube"],
+    "options": [
+      {
+        "id": "size",
+        "label": "Size",
+        "choices": [
+          { "id": "a2", "label": "A2", "delta": 0 },
+          { "id": "a1", "label": "A1", "delta": 10 },
+          { "id": "a0", "label": "A0", "delta": 24 }
+        ]
+      },
+      {
+        "id": "finish",
+        "label": "Finish",
+        "choices": [
+          { "id": "none", "label": "Unlaminated", "delta": 0 },
+          { "id": "laminate", "label": "Laminated (outdoor)", "delta": 6 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 200, "step": 1 },
+    "tiers": [
+      { "min": 10, "percent": 10 },
+      { "min": 50, "percent": 20 }
+    ],
+    "tags": ["poster", "posters", "print", "wall art", "signage", "large format"],
+    "art": { "kind": "flyer", "palette": ["#6D3BFF", "#FF5FA2", "#FFC93C", "#FFFFFF"] },
+    "pairsWith": ["illustration", "event-photography", "roll-up-banner"]
+  },
+  {
+    "id": "svc_031",
+    "slug": "roll-up-banner",
+    "name": "Roll-Up Banner",
+    "category": "prints",
+    "tagline": "Portable, pop-up presence in under 60 seconds.",
+    "description": "Retractable banners with a sturdy aluminium base and carry bag. Sharp, anti-curl print that stays flat event after event. A must-have for exhibitions, receptions, church programmes and pop-ups.",
+    "basePrice": 95,
+    "unit": "banner",
+    "badge": "Bestseller",
+    "popularity": 89,
+    "rating": 4.8,
+    "reviews": 1902,
+    "createdAt": "2024-11-11",
+    "useCases": ["events", "marketing"],
+    "industries": ["tech", "hospitality", "retail", "finance", "education", "health", "nonprofit"],
+    "urgency": "express",
+    "turnaround": { "min": 2, "max": 3 },
+    "includes": ["Aluminium stand and carry bag", "Anti-curl print", "Free design check", "Set up in 60 seconds"],
+    "options": [
+      {
+        "id": "size",
+        "label": "Size",
+        "choices": [
+          { "id": "85", "label": "85 × 200 cm", "delta": 0 },
+          { "id": "100", "label": "100 × 200 cm", "delta": 20 },
+          { "id": "120", "label": "120 × 200 cm", "delta": 40 }
+        ]
+      },
+      {
+        "id": "stand",
+        "label": "Stand",
+        "choices": [
+          { "id": "economy", "label": "Economy", "delta": 0 },
+          { "id": "premium", "label": "Premium", "delta": 45 },
+          { "id": "double", "label": "Double-sided", "delta": 110 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 50, "step": 1 },
+    "tiers": [
+      { "min": 3, "percent": 8 },
+      { "min": 10, "percent": 15 }
+    ],
+    "tags": ["roll-up banner", "rollup", "pull up banner", "banner", "standee", "exhibition", "signage"],
+    "art": { "kind": "rollup", "palette": ["#6D3BFF", "#00B8C2", "#FFC93C", "#FFFFFF"] },
+    "pairsWith": ["event-backdrop", "branded-t-shirts", "flyers", "event-photography"]
+  },
+  {
+    "id": "svc_032",
+    "slug": "event-backdrop",
+    "name": "Event Backdrop (Step & Repeat)",
+    "category": "prints",
+    "tagline": "The photo wall every guest wants to pose in front of.",
+    "description": "Large-format step-and-repeat and branded backdrops for launches, conferences, weddings and press events. Wrinkle-free tension fabric or durable vinyl, with frames that assemble in minutes — no tools needed.",
+    "basePrice": 320,
+    "unit": "backdrop",
+    "discount": { "percent": 10, "label": "Event season" },
+    "badge": "Bestseller",
+    "popularity": 91,
+    "rating": 4.9,
+    "reviews": 1288,
+    "createdAt": "2025-01-28",
+    "useCases": ["events", "marketing", "launch"],
+    "industries": ["hospitality", "creative", "tech", "nonprofit", "retail", "finance"],
+    "urgency": "express",
+    "turnaround": { "min": 2, "max": 4 },
+    "includes": [
+      "Free layout and logo repeat setup",
+      "Wrinkle-free, glare-free print",
+      "Tool-free frame and carry case",
+      "Delivery and optional installation"
+    ],
+    "options": [
+      {
+        "id": "size",
+        "label": "Size",
+        "choices": [
+          { "id": "2x2", "label": "2 × 2 m", "delta": 0 },
+          { "id": "3x2", "label": "3 × 2.4 m", "delta": 140 },
+          { "id": "4x2", "label": "4 × 2.4 m", "delta": 260 },
+          { "id": "6x3", "label": "6 × 3 m", "delta": 520 }
+        ]
+      },
+      {
+        "id": "material",
+        "label": "Material",
+        "choices": [
+          { "id": "fabric", "label": "Tension fabric", "delta": 0 },
+          { "id": "vinyl", "label": "Vinyl banner", "delta": -60 }
+        ]
+      },
+      {
+        "id": "frame",
+        "label": "Frame",
+        "choices": [
+          { "id": "telescopic", "label": "Telescopic stand", "delta": 0 },
+          { "id": "tension", "label": "Pillowcase tension frame", "delta": 120 },
+          { "id": "print-only", "label": "Print only", "delta": -80 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 20, "step": 1 },
+    "tiers": [{ "min": 3, "percent": 8 }],
+    "tags": ["backdrop", "step and repeat", "photo wall", "banner", "event", "press wall", "owambe", "stage"],
+    "art": { "kind": "backdrop", "palette": ["#16123A", "#6D3BFF", "#FFC93C", "#FFFFFF"] },
+    "pairsWith": ["event-photography", "roll-up-banner", "branded-t-shirts", "motion-logo"]
+  },
+  {
+    "id": "svc_033",
+    "slug": "custom-stickers",
+    "name": "Custom Stickers",
+    "category": "prints",
+    "tagline": "Die-cut stickers for laptops, packaging and fans.",
+    "description": "Durable, waterproof vinyl stickers in any shape. Glossy, matte or holographic finishes that survive dishwashers, rain and laptop bags. Great for packaging seals, swag and community drops.",
+    "basePrice": 39,
+    "unit": "pack of 100",
+    "badge": "Trending",
+    "popularity": 82,
+    "rating": 4.9,
+    "reviews": 2240,
+    "createdAt": "2025-04-25",
+    "useCases": ["marketing", "events", "gifting"],
+    "industries": ["tech", "retail", "creative", "education", "hospitality"],
+    "urgency": "express",
+    "turnaround": { "min": 2, "max": 4 },
+    "includes": ["Free proof", "Waterproof vinyl", "Scratch-resistant laminate", "Any custom shape"],
+    "options": [
+      {
+        "id": "shape",
+        "label": "Shape",
+        "choices": [
+          { "id": "circle", "label": "Circle", "delta": 0 },
+          { "id": "square", "label": "Rounded square", "delta": 0 },
+          { "id": "diecut", "label": "Custom die-cut", "delta": 8 }
+        ]
+      },
+      {
+        "id": "finish",
+        "label": "Finish",
+        "choices": [
+          { "id": "gloss", "label": "Glossy", "delta": 0 },
+          { "id": "matte", "label": "Matte", "delta": 0 },
+          { "id": "holo", "label": "Holographic", "delta": 15 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 100, "step": 1 },
+    "tiers": [
+      { "min": 5, "percent": 12 },
+      { "min": 20, "percent": 25 }
+    ],
+    "tags": ["stickers", "sticker", "decals", "labels", "vinyl", "die cut", "holographic", "swag"],
+    "art": { "kind": "sticker", "palette": ["#FF5FA2", "#FFC93C", "#6D3BFF", "#FFFFFF"] },
+    "pairsWith": ["logo-design", "packaging-design", "branded-hoodies", "mascot-design"]
+  },
+  {
+    "id": "svc_034",
+    "slug": "letterhead-stationery",
+    "name": "Letterhead & Stationery Set",
+    "category": "prints",
+    "tagline": "Polished paperwork that looks as good as you work.",
+    "description": "Letterheads, envelopes and compliment slips printed on premium uncoated paper, plus editable Word and Google Docs templates so your digital documents match your print.",
+    "basePrice": 79,
+    "unit": "set",
+    "popularity": 50,
+    "rating": 4.8,
+    "reviews": 402,
+    "createdAt": "2025-01-08",
+    "useCases": ["launch", "onboarding"],
+    "industries": ["finance", "education", "health", "nonprofit"],
+    "urgency": "standard",
+    "turnaround": { "min": 3, "max": 5 },
+    "includes": [
+      "250 letterheads on 120gsm uncoated",
+      "Editable Word and Google Docs templates",
+      "Free design setup"
+    ],
+    "options": [
+      {
+        "id": "set",
+        "label": "Set",
+        "choices": [
+          { "id": "letterhead", "label": "Letterhead only", "delta": 0 },
+          { "id": "envelopes", "label": "+ Envelopes", "delta": 45 },
+          { "id": "suite", "label": "Full suite", "delta": 95, "hint": "+ envelopes, comp slips, folders" }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 20, "step": 1 },
+    "tiers": [{ "min": 4, "percent": 10 }],
+    "tags": ["letterhead", "stationery", "envelopes", "compliment slips", "office", "print"],
+    "art": { "kind": "letterhead", "palette": ["#FFF7E8", "#FFE08A", "#FF6A4D", "#16123A"] },
+    "pairsWith": ["business-cards", "email-signature", "logo-design"]
+  },
+  {
+    "id": "svc_035",
+    "slug": "trade-show-booth",
+    "name": "Trade Show Booth Kit",
+    "category": "prints",
+    "tagline": "A complete branded booth, shipped ready to stand out.",
+    "description": "Back wall, counter, banners and lighting — designed, printed and packed in wheeled cases. We design the full booth around your brand and the floor plan, so you arrive and set up in under an hour.",
+    "basePrice": 1450,
+    "unit": "booth",
+    "popularity": 47,
+    "rating": 4.8,
+    "reviews": 96,
+    "createdAt": "2026-05-10",
+    "useCases": ["events", "marketing"],
+    "industries": ["tech", "health", "finance", "education"],
+    "urgency": "flexible",
+    "turnaround": { "min": 10, "max": 15 },
+    "includes": [
+      "Booth design to your floor plan",
+      "Fabric back wall and counter wrap",
+      "LED spotlights",
+      "Wheeled transport cases"
+    ],
+    "options": [
+      {
+        "id": "size",
+        "label": "Booth size",
+        "choices": [
+          { "id": "3x3", "label": "3 × 3 m", "delta": 0 },
+          { "id": "3x6", "label": "3 × 6 m", "delta": 1300 }
+        ]
+      },
+      {
+        "id": "counter",
+        "label": "Counter",
+        "choices": [
+          { "id": "none", "label": "No counter", "delta": 0 },
+          { "id": "counter", "label": "Branded counter", "delta": 380 }
+        ]
+      }
+    ],
+    "quantity": { "min": 1, "max": 5, "step": 1 },
+    "tags": ["trade show", "exhibition", "booth", "stand", "expo", "conference", "display"],
+    "art": { "kind": "backdrop", "palette": ["#00B8C2", "#2BD9A0", "#16123A", "#FFFFFF"] },
+    "pairsWith": ["branded-tote-bags", "branded-pens", "event-photography", "branded-t-shirts"]
+  }
+]
