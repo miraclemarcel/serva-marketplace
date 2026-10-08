@@ -7,6 +7,7 @@ import { Flag } from "@/components/ui/Flag";
 import { Logo } from "@/components/ui/Logo";
 import { useMarket } from "@/components/MarketProvider";
 import { MARKET_LIST } from "@/lib/markets";
+import { rememberMarket } from "@/lib/remember-market";
 import { CATEGORIES } from "@/lib/taxonomy";
 import { SearchBox } from "./SearchBox";
 
@@ -73,9 +74,7 @@ export function MobileMenu() {
                 <a
                   href={`/${mk.code}`}
                   aria-current={mk.code === m ? "true" : undefined}
-                  onClick={() => {
-                    document.cookie = `serva-market=${mk.code}; path=/; max-age=31536000; samesite=lax`;
-                  }}
+                  onClick={() => rememberMarket(mk.code)}
                   className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm ${mk.code === m ? "bg-white font-semibold shadow-card" : "text-ink-soft"}`}
                 >
                   <Flag code={mk.code} className="h-5 w-7" />

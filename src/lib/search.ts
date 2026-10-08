@@ -119,7 +119,7 @@ function buildIndex(services: Service[]): IndexedService[] {
 
 function termScore(term: string, fields: IndexedField[]): number {
   let best = 0;
-  const maxTypos = term.length >= 7 ? 2 : term.length >= 4 ? 1 : 0;
+  const maxTypos = term.length >= 8 ? 2 : term.length >= 5 ? 1 : 0;
   for (const field of fields) {
     for (const token of field.tokens) {
       let s = 0;
@@ -152,8 +152,10 @@ export function searchServices(
 
   const scored = index.map(({ service, fields, name }) => {
     const perTerm = terms.map((term) => {
-      const variants = [term, ...(SYNONYMS[term] ?? []).flatMap(tokenize)];
-      return Math.max(...variants.map((v, i) => termScore(v, fields) * (i === 0 ? 1 : 0.85)));
+      // A synonym phrase ("business cards") only counts when all its words match.
+      const phraseScore = (phrase: string) => Math.min(...tokenize(phrase).map((t) => termScore(t, fields)));
+      const synonyms = (SYNONYMS[term] ?? []).map((p) => phraseScore(p) * 0.85);
+      return Math.max(termScore(term, fields), ...synonyms);
     });
     const matched = perTerm.filter((s) => s > 0).length;
     let score = perTerm.reduce((a, b) => a + b, 0);
@@ -161,9 +163,11 @@ export function searchServices(
     return { service, score, matched };
   });
 
-  const strict = scored.filter((s) => s.matched === terms.length);
+  const strict = scored.filter((s) => s.matched === terms.length).sort((a, b) => b.score - a.score);
   if (strict.length) {
-    return { hits: strict.sort((a, b) => b.score - a.score), approximate: false };
+    // Drop long-tail hits that only matched through descriptions or typos.
+    const floor = strict[0].score * 0.3;
+    return { hits: strict.filter((h) => h.score >= floor), approximate: false };
   }
   const loose = scored.filter((s) => s.matched > 0).sort((a, b) => b.score - a.score);
   return { hits: loose, approximate: loose.length > 0 };

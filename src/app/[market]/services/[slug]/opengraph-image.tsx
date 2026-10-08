@@ -12,7 +12,7 @@ export default async function Image({ params }: { params: Promise<{ market: stri
   const { market: code, slug } = await params;
   const market = getMarket(code);
   const service = await getService(slug);
-  const [c1, c2, accent] = service?.art.palette ?? ["#6D3BFF", "#B18CFF", "#FFC93C"];
+  const [c1, c2] = service?.art.palette ?? ["#6D3BFF", "#B18CFF"];
   const price = service ? formatMoney(convert(startingPrice(service), market), market, { trim: true }) : "";
 
   return new ImageResponse(
@@ -32,11 +32,11 @@ export default async function Image({ params }: { params: Promise<{ market: stri
       >
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <div style={{ width: 56, height: 56, borderRadius: 16, background: "#16123A", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <div style={{ width: 22, height: 22, borderRadius: 11, background: accent }} />
+            <div style={{ width: 22, height: 22, borderRadius: 11, background: "#FFC93C" }} />
           </div>
           <div style={{ fontSize: 40, fontWeight: 800, color: "#FFFFFF" }}>serva.</div>
           <div style={{ marginLeft: "auto", background: "#FFFFFF", borderRadius: 999, padding: "10px 24px", fontSize: 26, fontWeight: 700 }}>
-            {market.country} · {market.currency}
+            {`${market.country} · ${market.currency}`}
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", background: "#FFFFFF", borderRadius: 40, padding: 48, gap: 12 }}>

@@ -97,37 +97,44 @@ body {
   color: white;
 }
 
-@layer components {
-  .container-x {
-    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
-  }
-  .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition duration-200 disabled:cursor-not-allowed disabled:opacity-50;
-  }
-  .btn-primary {
-    @apply btn bg-violet text-white shadow-glow hover:-translate-y-0.5 hover:bg-violet-deep active:translate-y-0;
-  }
-  .btn-dark {
-    @apply btn bg-ink text-white hover:-translate-y-0.5 hover:bg-black active:translate-y-0;
-  }
-  .btn-ghost {
-    @apply btn border border-line bg-white text-ink hover:border-ink/30 hover:bg-white;
-  }
-  .chip {
-    @apply inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-2 text-sm font-medium text-ink-soft transition hover:border-ink/30 hover:text-ink;
-  }
-  .chip-active {
-    @apply border-ink bg-ink text-white hover:border-ink hover:text-white;
-  }
-  .eyebrow {
-    @apply text-xs font-semibold tracking-[0.18em] text-violet uppercase;
-  }
-  .skeleton {
-    @apply rounded-xl bg-[linear-gradient(90deg,#efedf5_0%,#f8f7fb_50%,#efedf5_100%)] bg-[length:200%_100%] animate-shimmer;
-  }
-  .text-gradient {
-    @apply bg-gradient-to-r from-violet via-pink to-coral bg-clip-text text-transparent;
-  }
+@utility container-x {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition duration-200 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+@utility btn-primary {
+  @apply btn bg-violet text-white shadow-glow hover:-translate-y-0.5 hover:bg-violet-deep active:translate-y-0;
+}
+
+@utility btn-dark {
+  @apply btn bg-ink text-white hover:-translate-y-0.5 hover:bg-black active:translate-y-0;
+}
+
+@utility btn-ghost {
+  @apply btn border border-line bg-white text-ink hover:border-ink/30 hover:bg-white;
+}
+
+@utility chip {
+  @apply inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-2 text-sm font-medium text-ink-soft transition hover:border-ink/30 hover:text-ink;
+}
+
+@utility chip-active {
+  @apply border-ink! bg-ink! text-white! hover:border-ink! hover:text-white!;
+}
+
+@utility eyebrow {
+  @apply text-xs font-semibold tracking-[0.18em] text-violet uppercase;
+}
+
+@utility skeleton {
+  @apply rounded-xl bg-[linear-gradient(90deg,#efedf5_0%,#f8f7fb_50%,#efedf5_100%)] bg-[length:200%_100%] animate-shimmer;
+}
+
+@utility text-gradient {
+  @apply bg-gradient-to-r from-violet via-pink to-coral bg-clip-text text-transparent;
 }
 
 @media (prefers-reduced-motion: reduce) {

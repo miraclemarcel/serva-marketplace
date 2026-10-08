@@ -4,7 +4,8 @@ import { Check, ChevronDown } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState, type KeyboardEvent } from "react";
 import { Flag } from "@/components/ui/Flag";
-import { MARKET_COOKIE, MARKET_LIST, MARKETS, type MarketCode } from "@/lib/markets";
+import { MARKET_LIST, MARKETS, type MarketCode } from "@/lib/markets";
+import { rememberMarket } from "@/lib/remember-market";
 
 function Trigger({ code, ...props }: { code: MarketCode } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   const m = MARKETS[code];
@@ -56,7 +57,7 @@ export function MarketSwitcher({ code, align = "right" }: { code: MarketCode; al
   };
 
   const choose = (target: MarketCode) => {
-    document.cookie = `${MARKET_COOKIE}=${target}; path=/; max-age=31536000; samesite=lax`;
+    rememberMarket(target);
     setOpen(false);
     if (target !== code) router.push(hrefFor(target), { scroll: false });
   };

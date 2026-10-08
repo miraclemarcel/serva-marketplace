@@ -11,7 +11,7 @@ export function TotalsTable({ totals }: { totals: Totals }) {
     <dl className="text-sm">
       <div className={row}>
         <dt className="text-ink-soft">Subtotal</dt>
-        <dd className="font-medium tabular-nums">{formatMoney(totals.subtotal, market)}</dd>
+        <dd className="font-medium tabular-nums">{formatMoney(totals.listSubtotal, market)}</dd>
       </div>
       {totals.savings > 0 && (
         <div className={row}>

@@ -40,7 +40,7 @@ export function HeroCollage({ services, market }: { services: Service[]; market:
         );
       })}
 
-      <div className="absolute top-[44%] -left-2 z-40 hidden animate-float-slow items-center gap-2 rounded-2xl bg-white px-3 py-2 shadow-lift sm:flex" style={{ ["--r" as string]: "-4deg" }}>
+      <div className="absolute -bottom-3 left-[38%] z-40 hidden animate-float-slow items-center gap-2 rounded-2xl bg-white px-3 py-2 shadow-lift sm:flex" style={{ ["--r" as string]: "-4deg" }}>
         <span className="grid size-8 place-items-center rounded-full bg-mint/20">
           <BadgeCheck className="size-4 text-mint-deep" aria-hidden />
         </span>
@@ -49,7 +49,7 @@ export function HeroCollage({ services, market }: { services: Service[]; market:
           <span className="text-muted">2 min ago</span>
         </span>
       </div>
-      <div className="absolute -right-2 top-[38%] z-40 hidden animate-float items-center gap-2 rounded-2xl bg-ink px-3 py-2 text-white shadow-lift sm:flex" style={{ ["--r" as string]: "5deg" }}>
+      <div className="absolute -top-3 left-[34%] z-40 hidden animate-float items-center gap-2 rounded-2xl bg-ink px-3 py-2 text-white shadow-lift sm:flex" style={{ ["--r" as string]: "5deg" }}>
         <Zap className="size-4 text-sun" aria-hidden />
         <span className="text-xs font-semibold">Express in 48h</span>
       </div>

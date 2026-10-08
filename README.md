@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Serva — Service Ordering Interface
 
-## Getting Started
+A responsive branding-services marketplace built with **Next.js 16.4 (App Router, Cache Components)**, **TypeScript**, **Tailwind CSS v4** and **Zustand**, set in **Poppins**.
 
-First, run the development server:
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000 → redirects to your market, e.g. /us
+npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Set `NEXT_PUBLIC_SITE_URL` in production so canonical URLs, hreflang links, the sitemap and Open Graph tags use your domain.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | Rendering | Notes |
+| --- | --- | --- |
+| `/` | Proxy redirect | Picks a market from the saved cookie, then the geo header, then `Accept-Language`, and falls back to `us` |
+| `/{ng,us,gb,ca}` | Static per market | Landing page with market-specific hero copy, featured services and testimonial |
+| `/[market]/services` | Static shell + streamed results | Search, category, filters, sort and page are all in the URL |
+| `/[market]/services/[slug]` | Static (35 services × 4 markets) | Gallery, options, quantity, bundles, `generateMetadata`, JSON-LD, generated OG image |
+| `/[market]/cart`, `/checkout`, `/checkout/confirmation` | Client (Zustand, persisted) | Mock payment |
+| `/api/services`, `/api/services/[slug]` | Route handlers | Mock REST API with prices converted to each market's currency |
 
-## Learn More
+**Listing URL parameters:** `q`, `category`, `useCase`, `industry`, `urgency` (comma-separated), `sale=1`, `sort` (`popular` · `rating` · `newest` · `price-asc` · `price-desc`), `page`.
+Example: `/ng/services?category=gifts&useCase=events,gifting&sort=price-asc`.
 
-To learn more about Next.js, take a look at the following resources:
+## Where things live
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/data/services.json` — mock catalogue (35 services in Digital, Gifts, Create, Studio and Prints). Prices are stored in USD.
+- `src/lib/catalog.ts` — catalogue API (`use cache`), filtering, facet counts, sorting, related services.
+- `src/lib/search.ts` — search with synonyms (“tee” → T-shirt), prefix matching, typo tolerance (“bussiness card”), weighted relevance and a closest-match fallback.
+- `src/lib/markets.ts` — per-market currency, FX rate, rounding, tax, shipping, hero copy and featured services.
+- `src/lib/pricing.ts` — currency conversion, offer and volume-tier pricing, formatting.
+- `src/store/cart.ts` — Zustand cart (persisted to `localStorage`), totals, order snapshot.
+- `src/components/art/ServiceArt.tsx` — SVG product illustrations, so the app needs no external images.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Markets
 
-## Deploy on Vercel
+| Market | Currency | Tax |
+| --- | --- | --- |
+| `/ng` Nigeria | NGN ₦ | VAT 7.5% |
+| `/us` United States | USD $ | Est. sales tax 8% |
+| `/gb` United Kingdom | GBP £ | VAT 20% |
+| `/ca` Canada | CAD C$ | HST 13% |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+FX rates in `markets.ts` are fixed mock values.

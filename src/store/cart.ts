@@ -35,6 +35,9 @@ export type OrderSnapshot = {
 
 export type Totals = {
   itemCount: number;
+  /** Before offers and volume discounts. */
+  listSubtotal: number;
+  /** After offers and volume discounts; tax applies to this. */
   subtotal: number;
   savings: number;
   shipping: number;
@@ -88,6 +91,7 @@ export function computeTotals(items: CartItem[], code: MarketCode): Totals {
   const tax = round(subtotal * market.tax.rate, market);
   return {
     itemCount: items.length,
+    listSubtotal: round(subtotal + savings, market),
     subtotal,
     savings: round(savings, market),
     shipping,

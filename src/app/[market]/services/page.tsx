@@ -99,7 +99,7 @@ async function Catalog({
     <CatalogNavigation market={m} filters={filters}>
       <div className="container-x py-8 sm:py-10">
         {/* Category tabs are real links: crawlable and shareable. */}
-        <nav aria-label="Service categories" className="-mx-4 mb-6 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0">
+        <nav aria-label="Service categories" className="-mx-4 mb-6 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:px-0">
           <ul className="flex w-max gap-2">
             <li>
               <Link
