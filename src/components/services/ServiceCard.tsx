@@ -23,7 +23,6 @@ export function turnaroundLabel(s: Service) {
 export function ServiceCard({ service, market }: { service: Service; market: Market }) {
   const cat = CATEGORY_MAP[service.category];
   const from = convert(startingPrice(service), market);
-  const list = convert(service.basePrice, market);
   const href = `/${market.code}/services/${service.slug}`;
 
   return (
@@ -62,15 +61,7 @@ export function ServiceCard({ service, market }: { service: Service; market: Mar
         <div className="mt-auto flex items-end justify-between gap-3 pt-2">
           <div>
             <p className="text-[11px] font-medium tracking-wide text-muted uppercase">Starting at</p>
-            <p className="flex items-baseline gap-2">
-              <span className="text-xl font-bold text-ink tabular-nums">{formatMoney(from, market, { trim: true })}</span>
-              {service.discount && (
-                <span className="text-sm text-muted tabular-nums line-through">
-                  <span className="sr-only">was </span>
-                  {formatMoney(list, market, { trim: true })}
-                </span>
-              )}
-            </p>
+            <p className="text-xl font-bold text-ink tabular-nums">{formatMoney(from, market, { trim: true })}</p>
             <p className="mt-0.5 flex items-center gap-1 text-xs text-muted">
               <Clock className="size-3" aria-hidden /> {turnaroundLabel(service)} · per {service.unit}
             </p>
