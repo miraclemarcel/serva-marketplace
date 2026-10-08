@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { COUNTRY_TO_MARKET, DEFAULT_MARKET, isMarketCode, MARKET_COOKIE, type MarketCode } from "@/lib/markets";
 
-/** Picks a market from the saved preference, edge geo headers, then Accept-Language. */
+/** Picks a market from the saved preference, then edge geo headers; defaults to Nigeria. */
 function preferredMarket(request: NextRequest): MarketCode {
   const saved = request.cookies.get(MARKET_COOKIE)?.value;
   if (isMarketCode(saved)) return saved;
@@ -10,11 +10,6 @@ function preferredMarket(request: NextRequest): MarketCode {
     request.headers.get("x-vercel-ip-country") ?? request.headers.get("cf-ipcountry") ?? undefined;
   if (country && COUNTRY_TO_MARKET[country.toUpperCase()]) return COUNTRY_TO_MARKET[country.toUpperCase()];
 
-  const regions = (request.headers.get("accept-language") ?? "").match(/-[A-Za-z]{2}\b/g) ?? [];
-  for (const r of regions) {
-    const market = COUNTRY_TO_MARKET[r.slice(1).toUpperCase()];
-    if (market) return market;
-  }
   return DEFAULT_MARKET;
 }
 

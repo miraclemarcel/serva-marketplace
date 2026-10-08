@@ -1,7 +1,7 @@
 export const MARKET_CODES = ["ng", "us", "gb", "ca"] as const;
 export type MarketCode = (typeof MARKET_CODES)[number];
 
-export const DEFAULT_MARKET: MarketCode = "us";
+export const DEFAULT_MARKET: MarketCode = "ng";
 export const MARKET_COOKIE = "serva-market";
 
 export type Market = {

@@ -4,6 +4,7 @@ import { RotateCcw, TriangleAlert } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect } from "react";
+import { DEFAULT_MARKET } from "@/lib/markets";
 
 export default function MarketError({ error, retry }: { error: Error & { digest?: string }; retry: () => void }) {
   const params = useParams<{ market: string }>();
@@ -27,7 +28,7 @@ export default function MarketError({ error, retry }: { error: Error & { digest?
           <button type="button" onClick={retry} className="btn-primary">
             <RotateCcw className="size-4" aria-hidden /> Try again
           </button>
-          <Link href={`/${params?.market ?? "us"}/services`} className="btn-ghost">
+          <Link href={`/${params?.market ?? DEFAULT_MARKET}/services`} className="btn-ghost">
             Browse services
           </Link>
         </div>

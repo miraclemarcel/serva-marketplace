@@ -21,13 +21,14 @@ import { SearchBox } from "@/components/layout/SearchBox";
 import { ServiceCard } from "@/components/services/ServiceCard";
 import { Flag } from "@/components/ui/Flag";
 import { getCategoryStats, getServicesBySlugs, startingPrice } from "@/lib/catalog";
-import { getMarket, MARKET_LIST } from "@/lib/markets";
+import { currentMarket } from "@/lib/current-market";
+import { MARKET_LIST } from "@/lib/markets";
 import { convert, formatMoney } from "@/lib/pricing";
 import { CATEGORIES, USE_CASES } from "@/lib/taxonomy";
 import type { UseCaseId } from "@/lib/types";
 
-export async function generateMetadata({ params }: PageProps<"/[market]">): Promise<Metadata> {
-  const market = getMarket((await params).market);
+export async function generateMetadata(): Promise<Metadata> {
+  const market = await currentMarket();
   const title = `Branding services in ${market.country} — logos, merch, prints & studio`;
   return {
     title: { absolute: `Serva ${market.country} · ${market.hero.title} ${market.hero.highlight}` },
@@ -53,8 +54,8 @@ const USE_CASE_TONE = ["bg-violet", "bg-coral", "bg-pink", "bg-teal", "bg-sun", 
 
 const BRANDS = ["Kora Skincare", "Fieldnote AI", "Marlow & Bean", "Northwind Labs", "Bolt Bistro", "Lumen Health", "Ayo Tech", "Oak & Ivy", "Tidewater Co.", "Sabi Pay"];
 
-export default async function HomePage({ params }: PageProps<"/[market]">) {
-  const market = getMarket((await params).market);
+export default async function HomePage() {
+  const market = await currentMarket();
   const m = market.code;
   const [featured, stats, bundle] = await Promise.all([
     getServicesBySlugs(market.featured),

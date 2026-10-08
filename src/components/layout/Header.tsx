@@ -43,7 +43,7 @@ export function Header({ market }: { market: Market }) {
           <div className="ml-auto hidden max-w-sm flex-1 md:block">
             <SearchBox />
           </div>
-          <div className="ml-auto flex items-center gap-2 md:ml-0">
+          <div className="ml-auto flex items-center gap-1.5 sm:gap-2 md:ml-0">
             <Suspense fallback={<MarketSwitcherFallback code={m} />}>
               <MarketSwitcher code={m} />
             </Suspense>

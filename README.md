@@ -6,7 +6,7 @@ A responsive branding-services marketplace built with **Next.js 16.4 (App Router
 
 ```bash
 npm install
-npm run dev        # http://localhost:3000 → redirects to your market, e.g. /us
+npm run dev        # http://localhost:3000 → redirects to /ng (Nigeria) by default
 npm run build && npm start
 ```
 
@@ -16,7 +16,7 @@ Set `NEXT_PUBLIC_SITE_URL` in production so canonical URLs, hreflang links, the 
 
 | Route | Rendering | Notes |
 | --- | --- | --- |
-| `/` | Proxy redirect | Picks a market from the saved cookie, then the geo header, then `Accept-Language`, and falls back to `us` |
+| `/` | Proxy redirect | Picks a market from the saved cookie, then the geo header, and falls back to Nigeria (`/ng`) |
 | `/{ng,us,gb,ca}` | Static per market | Landing page with market-specific hero copy, featured services and testimonial |
 | `/[market]/services` | Static shell + streamed results | Search, category, filters, sort and page are all in the URL |
 | `/[market]/services/[slug]` | Static (35 services × 4 markets) | Gallery, options, quantity, bundles, `generateMetadata`, JSON-LD, generated OG image |

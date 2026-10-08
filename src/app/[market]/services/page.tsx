@@ -9,13 +9,14 @@ import { ServiceCard } from "@/components/services/ServiceCard";
 import { SortSelect } from "@/components/services/SortSelect";
 import { queryServices } from "@/lib/catalog";
 import { parseFilters, servicesHref, toQueryString } from "@/lib/filters";
-import { getMarket, MARKET_LIST, type Market } from "@/lib/markets";
+import { currentMarket } from "@/lib/current-market";
+import { MARKET_LIST, type Market } from "@/lib/markets";
 import { CATEGORIES, CATEGORY_MAP, INDUSTRIES, URGENCIES, USE_CASES, labelOf } from "@/lib/taxonomy";
 import type { Filters } from "@/lib/types";
 import { CatalogSkeleton } from "./CatalogSkeleton";
 
-export async function generateMetadata({ params, searchParams }: PageProps<"/[market]/services">): Promise<Metadata> {
-  const market = getMarket((await params).market);
+export async function generateMetadata({ searchParams }: PageProps<"/[market]/services">): Promise<Metadata> {
+  const market = await currentMarket();
   const filters = parseFilters(await searchParams);
   const cat = filters.category ? CATEGORY_MAP[filters.category] : null;
 
@@ -42,8 +43,8 @@ export async function generateMetadata({ params, searchParams }: PageProps<"/[ma
   };
 }
 
-export default async function ServicesPage({ params, searchParams }: PageProps<"/[market]/services">) {
-  const market = getMarket((await params).market);
+export default async function ServicesPage({ searchParams }: PageProps<"/[market]/services">) {
+  const market = await currentMarket();
 
   return (
     <>

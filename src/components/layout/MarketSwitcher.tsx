@@ -12,16 +12,16 @@ function Trigger({ code, ...props }: { code: MarketCode } & React.ButtonHTMLAttr
   return (
     <button
       type="button"
-      className="inline-flex h-11 items-center gap-2 rounded-full border border-line bg-white px-3 text-sm font-medium text-ink transition hover:border-ink/30"
+      className="inline-flex h-10 items-center gap-1.5 rounded-full border border-line bg-white px-2.5 text-sm font-medium text-ink transition hover:border-ink/30 sm:h-11 sm:gap-2 sm:px-3"
       {...props}
     >
-      <Flag code={code} />
+      <Flag code={code} className="h-3.5 w-5 sm:h-4 sm:w-6" />
       <span className="hidden sm:inline">{m.currency}</span>
       <span className="font-semibold sm:hidden">{m.currencySymbol}</span>
       <span className="sr-only">
         {" "}— {m.country}, prices in {m.currency}. Change country
       </span>
-      <ChevronDown className="size-4 text-muted" aria-hidden />
+      <ChevronDown className="size-3.5 text-muted sm:size-4" aria-hidden />
     </button>
   );
 }
@@ -81,9 +81,9 @@ export function MarketSwitcher({ code, align = "right" }: { code: MarketCode; al
         <div
           role="menu"
           aria-label="Choose your country and currency"
-          className={`absolute top-full z-50 mt-2 w-72 animate-pop rounded-2xl border border-line bg-white p-2 shadow-lift ${align === "right" ? "right-0 origin-top-right" : "left-0 origin-top-left"}`}
+          className={`absolute top-full z-50 mt-2 w-56 max-w-[calc(100vw-2rem)] animate-pop rounded-2xl border border-line bg-white p-1.5 shadow-lift sm:w-72 sm:p-2 ${align === "right" ? "right-0 origin-top-right" : "left-0 origin-top-left"}`}
         >
-          <p className="px-3 pt-2 pb-1 text-xs font-semibold tracking-wider text-muted uppercase">Country & currency</p>
+          <p className="px-2.5 pt-1.5 pb-1 text-[11px] font-semibold tracking-wider text-muted uppercase sm:px-3 sm:pt-2 sm:text-xs">Country & currency</p>
           {MARKET_LIST.map((m, i) => (
             <a
               key={m.code}
@@ -97,9 +97,9 @@ export function MarketSwitcher({ code, align = "right" }: { code: MarketCode; al
                 e.preventDefault();
                 choose(m.code);
               }}
-              className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-ink outline-none hover:bg-violet-soft focus-visible:bg-violet-soft"
+              className="flex items-center gap-2.5 rounded-xl px-2.5 py-2 text-[13px] text-ink outline-none hover:bg-violet-soft focus-visible:bg-violet-soft sm:gap-3 sm:px-3 sm:py-2.5 sm:text-sm"
             >
-              <Flag code={m.code} className="h-5 w-7" />
+              <Flag code={m.code} className="h-4 w-6 sm:h-5 sm:w-7" />
               <span className="flex-1">
                 <span className="block font-medium">{m.country}</span>
                 <span className="block text-xs text-muted">

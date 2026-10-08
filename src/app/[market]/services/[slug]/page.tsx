@@ -6,8 +6,11 @@ import { Configurator } from "@/components/detail/Configurator";
 import { Gallery } from "@/components/detail/Gallery";
 import { ServiceCard, turnaroundLabel } from "@/components/services/ServiceCard";
 import { Rating } from "@/components/ui/Rating";
+import { ServiceDetailSkeleton } from "./ServiceDetailSkeleton";
 import { getAllServices, getRelated, getService, getServicesBySlugs, startingPrice } from "@/lib/catalog";
-import { getMarket, MARKET_LIST } from "@/lib/markets";
+import { Suspense } from "react";
+import { currentMarket } from "@/lib/current-market";
+import { MARKET_LIST } from "@/lib/markets";
 import { convert, formatMoney } from "@/lib/pricing";
 import { SITE_URL } from "@/lib/site";
 import { CATEGORY_MAP, INDUSTRIES, USE_CASES, labelOf } from "@/lib/taxonomy";
@@ -18,8 +21,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps<"/[market]/services/[slug]">): Promise<Metadata> {
-  const { market: code, slug } = await params;
-  const [market, service] = [getMarket(code), await getService(slug)];
+  const { slug } = await params;
+  const [market, service] = [await currentMarket(), await getService(slug)];
   if (!service) return { title: "Service not found" };
 
   const from = formatMoney(convert(startingPrice(service), market), market, { trim: true });
@@ -45,9 +48,18 @@ export async function generateMetadata({ params }: PageProps<"/[market]/services
   };
 }
 
-export default async function ServicePage({ params }: PageProps<"/[market]/services/[slug]">) {
-  const { market: code, slug } = await params;
-  const market = getMarket(code);
+export default function ServicePage({ params }: PageProps<"/[market]/services/[slug]">) {
+  // The slug is URL data: read it inside Suspense so the market's App Shell stays shared.
+  return (
+    <Suspense fallback={<ServiceDetailSkeleton />}>
+      <ServiceDetail params={params} />
+    </Suspense>
+  );
+}
+
+async function ServiceDetail({ params }: Pick<PageProps<"/[market]/services/[slug]">, "params">) {
+  const { slug } = await params;
+  const market = await currentMarket();
   const service = await getService(slug);
   if (!service) notFound();
 
