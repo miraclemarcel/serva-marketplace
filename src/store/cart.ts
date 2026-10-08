@@ -87,7 +87,7 @@ export function computeTotals(items: CartItem[], code: MarketCode): Totals {
   const shipping = hasPhysical && physicalSubtotal < freeOver ? convert(market.shipping.flatUSD, market) : 0;
   const tax = round(subtotal * market.tax.rate, market);
   return {
-    itemCount: items.reduce((n, i) => n + 1, 0),
+    itemCount: items.length,
     subtotal,
     savings: round(savings, market),
     shipping,
