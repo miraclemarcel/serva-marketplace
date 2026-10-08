@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
-import { LogoMark } from "@/components/ui/Logo";
-import { MARKET_LIST } from "@/lib/markets";
+import { Logo } from "@/components/ui/Logo";
+import { DEFAULT_MARKET, MARKET_LIST } from "@/lib/markets";
 
 const poppins = Poppins({ variable: "--font-poppins", subsets: ["latin"], weight: ["400", "600", "800"] });
 
@@ -18,7 +18,7 @@ export default function GlobalNotFound() {
       <body>
         <main className="grid min-h-dvh place-items-center bg-gradient-to-br from-violet-soft via-paper to-pink-soft px-4 py-16">
           <div className="max-w-lg text-center">
-            <LogoMark className="mx-auto size-14" />
+            <Logo href={`/${DEFAULT_MARKET}`} />
             <p className="mt-8 text-8xl font-extrabold tracking-tight text-gradient">404</p>
             <h1 className="mt-4 text-2xl font-bold">This page went off-brand</h1>
             <p className="mt-2 text-muted">

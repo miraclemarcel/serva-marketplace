@@ -1,4 +1,3 @@
-import { Sparkles } from "lucide-react";
 import Link from "next/link";
 import { Suspense } from "react";
 import { CartButton } from "@/components/cart/CartDrawer";
@@ -15,7 +14,6 @@ export function Header({ market }: { market: Market }) {
     <>
       <div className="bg-ink text-white">
         <p className="container-x flex items-center justify-center gap-2 py-2 text-center text-xs font-medium sm:text-[13px]">
-          <Sparkles className="size-3.5 shrink-0 text-sun" aria-hidden />
           <span>{market.announcement}</span>
         </p>
       </div>

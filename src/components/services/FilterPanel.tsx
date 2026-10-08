@@ -117,7 +117,7 @@ export function FilterSidebar({ facets }: { facets: FacetCounts }) {
   const { filters, update } = useCatalog();
   const count = activeFilterCount(filters);
   return (
-    <div className="sticky top-28 hidden max-h-[calc(100dvh-8rem)] overflow-y-auto pr-2 pb-6 lg:block">
+    <div className="sticky top-28 hidden max-h-[calc(100dvh-8rem)] overflow-y-auto pr-2 pb-6 [scrollbar-width:thin] lg:block">
       <div className="mb-5 flex items-center justify-between">
         <h2 className="flex items-center gap-2 font-semibold">
           <SlidersHorizontal className="size-4" aria-hidden /> Filters
