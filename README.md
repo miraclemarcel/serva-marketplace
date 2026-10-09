@@ -2,6 +2,8 @@
 
 A responsive branding-services marketplace built with **Next.js 16.4 (App Router, Cache Components)**, **TypeScript**, **Tailwind CSS v4** and **Zustand**, set in **Poppins**.
 
+**Live preview:** [servamarketplace.netlify.app](https://servamarketplace.netlify.app)
+
 ## Run it
 
 ```bash
